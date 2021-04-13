@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather forecast</title>
+    <meta charset="UTF-8" />
+     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Weather forecast</h1>
+    <form id="search-form">
+      <label for="Location" class="form-label">Please type the city</label>
+      <input type="text" placeholder="city" autocomplete="off" id="search-input"/>
+      <input type="submit" value="Show forecast" />
+    </form>
+    <button> Current location </button>
+    <hr />
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card">
+          <div class="card-body">
+            <h2>Currently:</h2>
+            <h5 class="card-title">London 21°</h5>
+            <p class="time">Time</p>
+            <p class="card-text">🌞 Sunny</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="col-sm-6">
+              <h2>Upcoming days:</h2>
+              <h6 class="card-title">Monday</h6>
+              <h6 class="card-title">Tuesday</h6>
+              <h6 class="card-title">Wednesday</h6>
+              <h6 class="card-title">Thursday</h6>
+              <h6 class="card-title">Friday</h6>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+     
+        <div class="text-center">
+          <button type="button" class="btn btn-primary">
+            Clear your search
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

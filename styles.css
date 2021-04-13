@@ -1,0 +1,46 @@
+h1 {
+  color: #007580;
+  text-align: center;
+  padding: 20px;
+}
+form {
+  display: block;
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+hr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+div.button {
+  width: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  margin: 20 px;
+  border-radius: 8px;
+  background-color: rgb(235, 221, 187);
+  border: 2px solid rgb(175, 168, 76);
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
