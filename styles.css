@@ -14,9 +14,17 @@ h5 {
   text-align: center;
 }
 
+h6 {
+  text-align: center;
+  font: 300;
+  font-family: fantasy;
+  padding-top: 30px;
+}
+
 p {
   text-align: center;
 }
+
 body {
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   padding-left: 20px;
