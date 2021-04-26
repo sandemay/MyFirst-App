@@ -8,7 +8,7 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let hour = now.getHours();
 let minutes = now.getMinutes();
@@ -37,6 +37,15 @@ function showWeather(response) {
   let city2 = document.querySelector("#search-input").value;
   let temperature = Math.round(response.data.main.temp);
   h5.innerHTML = `${city2} ${temperature}°`;
+  let descriptionElement = document.querySelector("#description");
+
+  let iconElement = document.querySelector("#icon");
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function handlePosition(position) {
